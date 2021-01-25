@@ -34,8 +34,8 @@ resource "aws_instance" "web" {
 }
 
 
-resource "aws_security_group" "security_group_jenkins_jeremy" {
-  name = "security_group_jenkins_jeremy"
+resource "aws_security_group" "security_group_jeremy" {
+  name = "instance_terraform_jeremy"
   description = "security group jenkins jeremy"
 
   ingress {
@@ -47,12 +47,6 @@ resource "aws_security_group" "security_group_jenkins_jeremy" {
   ingress {
     from_port = 80
     to_port = 80
-    protocol = "tcp"
-  }
-
-  ingress {
-    from_port = 8080
-    to_port = 8080
     protocol = "tcp"
   }
 
