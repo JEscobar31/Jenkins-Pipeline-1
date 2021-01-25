@@ -34,7 +34,7 @@ resource "aws_instance" "web" {
 }
 
 
-resource "aws_security_group" "security_group_jeremy" {
+resource "aws_security_group" "security_group_jenkins_jeremy" {
   name = "instance_terraform_jeremy"
   description = "security group jenkins jeremy"
 
